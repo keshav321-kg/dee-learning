@@ -1,0 +1,58 @@
+Deep Learning Practical: Fashion Image Classification
+
+A Google Colab / Jupyter notebook practical for BBA AI/ML students, teaching the basics of deep learning through an e-commerce image classification use case.
+
+Business Scenario
+
+An e-commerce company receives thousands of product images every day. Instead of manually tagging each one, a deep learning model can classify images into categories such as:
+
+T-shirt / Top
+Trouser
+Pullover
+Dress
+Coat
+Sandal
+Shirt
+Sneaker
+Bag
+Ankle Boot
+What's in the Notebook
+
+Deep_Learning_Fashion_Image_Classification_BBA.ipynb walks through the full pipeline:
+
+Import required libraries (TensorFlow/Keras, Matplotlib)
+Load the Fashion MNIST dataset (downloads automatically — no manual upload needed)
+Define the 10 product categories
+Visualize sample product images
+Normalize pixel values (0–255 → 0–1)
+Build a simple neural network (Flatten → Dense(64, relu) → Dense(10, softmax))
+Compile and train the model (3 epochs, for a quick classroom demo)
+Evaluate test accuracy
+Generate predictions on unseen test images
+Inspect individual predictions (image_number can be changed to try other images)
+
+Each technical step is paired with a business-interpretation note connecting the ML concept to a real e-commerce workflow (e.g., what accuracy means for deployment risk, human review, and customer experience).
+
+Requirements
+Python 3
+TensorFlow / Keras
+Matplotlib
+NumPy
+
+Runs out of the box in Google Colab; no local setup or dataset download required.
+
+Usage
+Open the notebook in Google Colab (or Jupyter).
+Run all cells top to bottom.
+Change image_number in Step 13 to test predictions on different images.
+Complete the Student Activity and Final Reflection sections at the end.
+Learning Objectives
+Understand the input → hidden layer → output structure of a neural network
+Understand training vs. testing, and what "accuracy" means in practice
+Connect a technical ML pipeline to a real business process and its risks/benefits
+Practice interpreting model predictions and considering human oversight in AI-assisted workflows
+Submission
+
+Rename the notebook to Deep_Learning_Fashion_Classification_<YourName>.ipynb, save a screenshot showing a product image with its predicted and actual category, and upload both to the course GitHub repository under:
+
+part-a/deep-learning/
